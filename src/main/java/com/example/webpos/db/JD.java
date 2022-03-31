@@ -47,31 +47,31 @@ public class JD implements PosDB {
     public static List<Product> parseJD(String keyword) throws IOException {
         //获取请求https://search.jd.com/Search?keyword=java
         List<Product> list = new ArrayList<>();
-        String url = "https://search.jd.com/Search?keyword=" + keyword;
-        //解析网页
-        Document document = Jsoup.parse(new URL(url), 10000);
-        //所有js的方法都能用
-        Element element = document.getElementById("J_goodsList");
-        //获取所有li标签
-        Elements elements = element.getElementsByTag("li");
-//        System.out.println(element.html());
-
-
-        //获取元素的内容
-        for (Element el : elements
-        ) {
-            //关于图片特别多的网站，所有图片都是延迟加载的
-            String id = el.attr("data-spu");
-            String img = "https:".concat(el.getElementsByTag("img").eq(0).attr("data-lazy-img"));
-            String price = el.getElementsByAttribute("data-price").text();
-            String title = el.getElementsByClass("p-name").eq(0).text();
-            if (title.indexOf("，") >= 0)
-                title = title.substring(0, title.indexOf("，"));
-
-            Product product = new Product(id, title, Double.parseDouble(price), img);
-
-            list.add(product);
-        }
+//        String url = "https://search.jd.com/Search?keyword=" + keyword;
+//        //解析网页
+//        Document document = Jsoup.parse(new URL(url), 10000);
+//        //所有js的方法都能用
+//        Element element = document.getElementById("J_goodsList");
+//        //获取所有li标签
+//        Elements elements = element.getElementsByTag("li");
+////        System.out.println(element.html());
+//
+//
+//        //获取元素的内容
+//        for (Element el : elements
+//        ) {
+//            //关于图片特别多的网站，所有图片都是延迟加载的
+//            String id = el.attr("data-spu");
+//            String img = "https:".concat(el.getElementsByTag("img").eq(0).attr("data-lazy-img"));
+//            String price = el.getElementsByAttribute("data-price").text();
+//            String title = el.getElementsByClass("p-name").eq(0).text();
+//            if (title.indexOf("，") >= 0)
+//                title = title.substring(0, title.indexOf("，"));
+//
+//            Product product = new Product(id, title, Double.parseDouble(price), img);
+//
+//            list.add(product);
+//        }
         return list;
     }
 

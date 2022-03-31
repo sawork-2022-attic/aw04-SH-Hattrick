@@ -54,8 +54,6 @@
 
 ### 三、缓存与会话
 
-#### Cache
-
 我们在springboot的启动应用类前添加@EnableCache注解，并在JD类添加@Cacheable注解，运行含四个占用0.5cpu的服务器集群，接连启动两次：
 
 ![image-20220331125608560](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\11.png)
@@ -64,4 +62,46 @@
 
 如上图所示：第二次测试的效率显著优于第一次，第一次甚至有很多“KO”的连接，足以证明缓存在访问服务器时发挥的重要作用。
 
-#### 
+在docker容器中配置redis,使用docker pull redis命令。由于国外镜像站被锁，需要切换到国内docker镜像站。
+
+![image-20220331163903650](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\13.png)
+
+如图，成功在docker中创建了redis镜像。
+
+为项目配置cache类型：
+
+![image-20220331164025480](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\14.png)
+
+并蒋上面的session.store-type改为redis。
+
+![image-20220331164154124](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\15.png)
+
+运行两个服务器，在another redis中，可以看到它们已经与redis成功连接。
+
+![image-20220331164300633](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\16.png)
+
+进行压力测试：
+
+![image-20220331164352655](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\17.png)
+
+![image-20220331164401997](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\18.png)
+
+
+
+#### Redis Cluster
+
+现在来创建redis集群。
+
+首先创建三个redis服务器：
+
+![image-20220331165313717](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\19.png)
+
+进入某一个redis服务器的控制台，使用如下命令：
+
+![image-20220331171316023](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\20.png)
+
+其中参数是所有redis服务器的ip和端口，即可建好redis集群。
+
+进行压力测试：
+
+![image-20220331171420333](C:\Users\Yongp\Desktop\Classified\SS\AW4\img\21.png)
