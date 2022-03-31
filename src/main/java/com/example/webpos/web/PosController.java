@@ -4,6 +4,7 @@ import com.example.webpos.biz.PosService;
 import com.example.webpos.model.Cart;
 import com.example.webpos.model.Item;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,8 +36,18 @@ public class PosController {
         return "index";
     }
 
+    @GetMapping("/login")
+    ResponseEntity<Boolean> login(HttpSession session){
+        session.setAttribute("login", Boolean.TRUE);
+        return ResponseEntity.ok(Boolean.TRUE);
+    }
+
     @GetMapping("/add")
-    public String addByGet(@RequestParam(name = "pid") String pid, Model model) {
+    public String addByGet(@RequestParam(name = "pid") String pid, Model model, HttpSession session) {
+        if(session.getAttribute("login") == null || !(boolean)(session.getAttribute("login"))){
+            return "?";
+        }
+
         posService.add(cart, pid, 1);
         model.addAttribute("products", posService.products());
         model.addAttribute("cart", cart);

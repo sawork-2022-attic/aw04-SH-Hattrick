@@ -1,0 +1,151 @@
+RUN	computerdatabase.MySimulation	mysimulation	1648617670415	 	3.7.6
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671783
+USER	Scenario Name	START	1648617671783
+USER	Scenario Name	START	1648617671783
+USER	Scenario Name	START	1648617671783
+USER	Scenario Name	START	1648617671783
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671628
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671798	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671785	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671798	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671812
+USER	Scenario Name	START	1648617671812
+REQUEST		app_request	1648617671737	1648617671814	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671814	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671815
+USER	Scenario Name	END	1648617671815
+REQUEST		app_request	1648617671812	1648617671816	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671812	1648617671816	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671816
+USER	Scenario Name	END	1648617671816
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671628
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	START	1648617671827
+REQUEST		app_request	1648617671737	1648617671828	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	START	1648617671827
+USER	Scenario Name	END	1648617671828
+REQUEST		app_request	1648617671737	1648617671829	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671829	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671829	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671829	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671829
+USER	Scenario Name	END	1648617671829
+REQUEST		app_request	1648617671737	1648617671829	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671829	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671829
+REQUEST		app_request	1648617671827	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671829
+REQUEST		app_request	1648617671827	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671829
+USER	Scenario Name	END	1648617671829
+USER	Scenario Name	END	1648617671830
+USER	Scenario Name	END	1648617671830
+REQUEST		app_request	1648617671737	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671830
+REQUEST		app_request	1648617671737	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671830
+REQUEST		app_request	1648617671737	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671827	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671827	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671830
+REQUEST		app_request	1648617671737	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671827	1648617671830	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671830
+REQUEST		app_request	1648617671827	1648617671831	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671828	1648617671831	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671828	1648617671831	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671828	1648617671831	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671830
+USER	Scenario Name	END	1648617671830
+USER	Scenario Name	END	1648617671830
+USER	Scenario Name	END	1648617671830
+USER	Scenario Name	END	1648617671830
+USER	Scenario Name	END	1648617671830
+USER	Scenario Name	END	1648617671831
+USER	Scenario Name	END	1648617671831
+USER	Scenario Name	END	1648617671831
+USER	Scenario Name	END	1648617671831
+USER	Scenario Name	START	1648617671627
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	END	1648617671843
+USER	Scenario Name	END	1648617671843
+USER	Scenario Name	START	1648617671627
+REQUEST		app_request	1648617671783	1648617671844	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	START	1648617671626
+REQUEST		app_request	1648617671783	1648617671844	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671844
+USER	Scenario Name	END	1648617671844
+USER	Scenario Name	END	1648617671845
+USER	Scenario Name	END	1648617671845
+USER	Scenario Name	END	1648617671845
+USER	Scenario Name	END	1648617671845
+USER	Scenario Name	START	1648617671626
+USER	Scenario Name	END	1648617671845
+USER	Scenario Name	END	1648617671846
+USER	Scenario Name	END	1648617671847
+REQUEST		app_request	1648617671783	1648617671847	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	START	1648617671845
+USER	Scenario Name	END	1648617671847
+REQUEST		app_request	1648617671737	1648617671847	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671847	KO	j.n.ConnectException: Connection refused: no further information
+REQUEST		app_request	1648617671737	1648617671847	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671847
+USER	Scenario Name	END	1648617671847
+USER	Scenario Name	END	1648617671847
+USER	Scenario Name	END	1648617671847
+REQUEST		app_request	1648617671783	1648617671847	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	START	1648617671847
+USER	Scenario Name	END	1648617671847
+REQUEST		app_request	1648617671737	1648617671848	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671848
+REQUEST		app_request	1648617671847	1648617671848	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671848
+REQUEST		app_request	1648617671737	1648617671848	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671849
+REQUEST		app_request	1648617671847	1648617671849	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671849
+USER	Scenario Name	END	1648617671859
+REQUEST		app_request	1648617671783	1648617671859	KO	j.n.ConnectException: Connection refused: no further information
+USER	Scenario Name	END	1648617671859

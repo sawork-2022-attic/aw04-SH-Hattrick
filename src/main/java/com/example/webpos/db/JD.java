@@ -6,6 +6,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
@@ -14,12 +16,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
+
 public class JD implements PosDB {
 
 
     private List<Product> products = null;
 
     @Override
+    @Cacheable("products")
     public List<Product> getProducts() {
         try {
             if (products == null)
@@ -42,6 +46,7 @@ public class JD implements PosDB {
 
     public static List<Product> parseJD(String keyword) throws IOException {
         //获取请求https://search.jd.com/Search?keyword=java
+        List<Product> list = new ArrayList<>();
         String url = "https://search.jd.com/Search?keyword=" + keyword;
         //解析网页
         Document document = Jsoup.parse(new URL(url), 10000);
@@ -50,7 +55,7 @@ public class JD implements PosDB {
         //获取所有li标签
         Elements elements = element.getElementsByTag("li");
 //        System.out.println(element.html());
-        List<Product> list = new ArrayList<>();
+
 
         //获取元素的内容
         for (Element el : elements
